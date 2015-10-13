@@ -1,0 +1,88 @@
+# Ruby on Rails
+# --------------------------------------
+*.rbc
+*.sassc
+.env
+.sass-cache
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+
+# these should all be checked in to normalise the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+
+# Vagrant
+# --------------------------------------
+.vagrant
+Vagrantfile
+Vagrantfile.pkg
+
+
+# Git
+# --------------------------------------
+.gitconfig
+
+
+# SSL
+# --------------------------------------
+.crt
+.csr
+.key
+.pass.key
+.pem
+
+
+# Mac OS
+# --------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# Icon must ends with two \r.
+Icon
+
+
+# Thumbnails
+._*
+
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# Misc
+# --------------------------------------
+*.swp
+*~
+.project
+lib-cov
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results

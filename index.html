@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Fucking vote.</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <script src="js/chartkick.js"></script>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <div class="section hero">
+    <h1 class="section-heading">Fucking vote.</h1>
+    <h6>In the 2011 federal election, <strong>9.25 million</strong> eligible voters let someone else choose their government.</h6>
+  </div>
+
+  <div class="section values">
+    <div class="container">
+      <h2>Only 38.8% of eligible voters aged 18–24<br />voted in the last election.</h2>
+      <h6>61.2% let their government be chosen by their parents and grandparents:<br />about 73% of eligible voters aged 55–74 voted.</h6>
+      <p><a href="http://www.elections.ca/content.aspx?section=res&dir=rec/part/estim/41ge&document=report41&lang=e" title="Elections Canada: Estimation of Voter Turnout by Age Group and Gender at the 2011 Federal General Election">Source: Elections Canada</a></p>
+    </div>
+  </div>
+
+  <div class="section values maths">
+    <div class="container">
+      <h2>2011 federal election</h2>
+      <div class="row">
+        <div class="one-half column value calc">
+          <h5>23,971,740</h5>
+          <p>eligible voters</p>
+          <h5>- 14,720,580</h5>
+          <p>votes cast</p>
+          <h5 class="sum">9,251,160</h5>
+          <p>votes that <em>could have</em> changed the government</p>
+        </div>
+        <div class="one-half column">
+          <div id="turnout" style="height:250px;"></div>
+        </div>
+      </div>
+      <p class="source"><a href="http://www.elections.ca/content.aspx?section=res&dir=rec/part/estim/41ge&document=report41&lang=e" title="Elections Canada: Estimation of Voter Turnout by Age Group and Gender at the 2011 Federal General Election">Source: Elections Canada</a></p>
+    </div>
+  </div>
+
+  <div class="section get-help">
+    <div class="container">
+      <h3>&ldquo;My vote doesn&rsquo;t matter.&rdquo;</h3>
+      <h6>That&rsquo;s what <strong>9,251,160</strong> people said last time.</h6>
+      <h6><strong>9,251,160</strong> votes <em>could have</em> mattered&hellip; but they weren&rsquo;t cast.</h6>
+    </div>
+    <div class="six columns offset-by-three">
+      <div class="callout">
+        <h5 class="value-heading">Only <strong>9</strong> votes</h5>
+        <p class="value-description">determined a riding&rsquo;s elected MP in the <a href="http://www.vancouversun.com/news/politics/Recount+gives+59th+seat+Quebec/4785274/story.html" title="Vancouver Sun: Recount gives NDP a 59th seat in Quebec">2011 federal election</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section get-help">
+    <div class="container">
+      <h3>Fucking vote.</h3>
+      <p>Research shows that <a href="http://rabble.ca/blogs/bloggers/brent-patterson/2015/05/voter-turnout-key-to-changing-governments">voter turnout is key to changing governments.</a></p>
+      <h3>OK. How do I fucking vote?</h3>
+      <p>Ensure that you are <a href="https://ereg.elections.ca/CWelcome.aspx">registered to vote</a>.</p>
+      <p>Find your <a href="http://www.elections.ca/scripts/vis/FindED?L=e&PAGEID=20">polling station</a>.</p>
+      <p><a href="http://www.elections.ca/content2.aspx?section=id&document=index&lang=e">Take your ID</a> and vote.</p>
+    </div>
+  </div>
+  
+  <script>
+  new Chartkick.PieChart("turnout", [["Fucking voted", 14720580],["Could have fucking voted…", 9251160]], {"colors": ["#666", "#D71920"]});
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68449887-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</body>
+</html>
